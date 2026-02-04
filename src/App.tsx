@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import ChairmanMessage from "./pages/ChairmanMessage";
 import ReportsAndAccounts from "./pages/ReportsAndAccounts";
 import Contact from "./pages/Contact";
+import Simulator from "./pages/Simulator";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/mensagem-pca" element={<ChairmanMessage />} />
           <Route path="/relatorio-contas" element={<ReportsAndAccounts />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/simulador" element={<Simulator />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

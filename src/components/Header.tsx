@@ -74,9 +74,11 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Button className="btn-gold text-sm font-semibold px-5 py-2.5">
-              SIMULADOR DE CRÉDITO
-            </Button>
+            <a href="/simulador">
+              <Button className="btn-gold text-sm font-semibold px-5 py-2.5">
+                SIMULADOR DE CRÉDITO
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -134,9 +136,11 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button className="btn-gold text-sm font-semibold mt-2 w-full">
-                SIMULADOR DE CRÉDITO
-              </Button>
+              <a href="/simulador" className="w-full">
+                <Button className="btn-gold text-sm font-semibold mt-2 w-full">
+                  SIMULADOR DE CRÉDITO
+                </Button>
+              </a>
             </nav>
           </div>
         )}
