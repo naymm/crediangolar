@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Crediangolar Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary: 173 70% 18%; /* #0D4D4D - Verde escuro */
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - Teal */
+    --secondary: 173 56% 24%; /* #1a5f5f - Verde petróleo */
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Accent - Gold */
+    --accent: 42 56% 55%; /* #D4A843 - Dourado */
+    --accent-foreground: 0 0% 100%;
+    
+    /* Background */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%; /* #1a1a1a */
+    
+    /* Muted */
+    --muted: 0 0% 96%; /* #F5F5F5 */
+    --muted-foreground: 0 0% 40%;
+    
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    
+    /* Border */
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 173 70% 18%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Radius */
+    --radius: 0.5rem;
+    
+    /* Custom Crediangolar tokens */
+    --credi-green: 173 70% 18%;
+    --credi-teal: 173 56% 24%;
+    --credi-gold: 42 56% 55%;
+    --credi-light-bg: 0 0% 98%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(173 70% 18% / 0.9), hsl(173 56% 24% / 0.8));
+    --gradient-cta: linear-gradient(135deg, hsl(173 56% 24%), hsl(173 70% 22%));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(173 70% 18% / 0.1);
+    --shadow-elevated: 0 20px 40px -12px hsl(173 70% 18% / 0.15);
+    --shadow-gold: 0 4px 20px -4px hsl(42 56% 55% / 0.4);
+    
+    /* Sidebar defaults */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --primary: 173 70% 18%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 173 56% 24%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 42 56% 55%;
+    --accent-foreground: 0 0% 100%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 42 56% 55%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  /* Button variants */
+  .btn-gold {
+    @apply bg-accent text-accent-foreground font-semibold px-6 py-3 rounded-lg transition-all duration-300;
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .btn-gold:hover {
+    @apply brightness-110 scale-[1.02];
+  }
+  
+  .btn-outline-white {
+    @apply bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300;
+  }
+  
+  .btn-outline-white:hover {
+    @apply bg-white text-primary;
+  }
+  
+  /* Card styles */
+  .card-elevated {
+    box-shadow: var(--shadow-card);
+    @apply transition-all duration-300;
+  }
+  
+  .card-elevated:hover {
+    box-shadow: var(--shadow-elevated);
+    @apply -translate-y-1;
+  }
+  
+  /* Section styles */
+  .section-padding {
+    @apply py-16 md:py-24 px-4;
+  }
+  
+  /* Product card hover effect */
+  .product-card {
+    @apply relative overflow-hidden rounded-2xl;
+  }
+  
+  .product-card img {
+    @apply transition-transform duration-500;
+  }
+  
+  .product-card:hover img {
+    @apply scale-110;
+  }
+  
+  /* Stat number animation */
+  .stat-number {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+}
+
+@layer utilities {
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary;
+  }
+  
+  /* Background patterns */
+  .bg-pattern {
+    background-image: radial-gradient(circle at 25% 25%, hsl(var(--accent) / 0.05) 0%, transparent 50%),
+                      radial-gradient(circle at 75% 75%, hsl(var(--primary) / 0.05) 0%, transparent 50%);
+  }
+}
+
+.product-name {
+  padding-top: 300px !important;
+}
