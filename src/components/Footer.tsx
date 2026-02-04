@@ -1,15 +1,16 @@
 import { Phone, MapPin, Mail } from 'lucide-react';
+import logo from '@/assets/logo-oficial.png';
 
 const footerLinks = {
   institucional: [
-    { name: 'Sobre nós', href: '#' },
+    { name: 'Sobre nós', href: '/sobre-nos' },
     { name: 'O que fazemos', href: '#' },
-    { name: 'Parceiros', href: '#' },
-    { name: 'Política de Privacidade', href: '#' },
-    { name: 'Contacto', href: '#' },
+    { name: 'Parceiros', href: '/parceiros' },
+    { name: 'Política de Privacidade', href: '/politica-de-privacidade' },
+    { name: 'Contacto', href: '/contacto' },
   ],
   ofertas: [
-    { name: 'Produtos', href: '#produtos' },
+    { name: 'Produtos', href: '/produtos' },
     { name: 'Notícias', href: '#noticias' },
     { name: 'Projetos', href: '#projetos' },
     { name: 'FAQ', href: '#' },
@@ -35,9 +36,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Column 1: Logo & Description */}
           <div className="lg:col-span-1">
-            <a href="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold">Crediangolar</span>
-            </a>
+          <a href="/" className="flex items-center">
+            <span className="text-xl md:text-2xl font-bold text-primary-foreground tracking-tight">
+              <img src={logo} alt="Logo Crediangolar" className="w-auto h-16 logo-oficial" />
+            </span>
+          </a>
             <p className="text-sm text-primary-foreground/70 mb-4">
               Sociedade de Microcrédito, SA. Transformando vidas há mais de 9 anos com soluções financeiras acessíveis.
             </p>

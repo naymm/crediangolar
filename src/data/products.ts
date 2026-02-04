@@ -85,9 +85,9 @@ export const productsData: Product[] = [
       minimo: '100.000 kz',
       maximo: '2.500.000 kz',
     },
-    taxaJuros: '3.2%',
+    taxaJuros: '4.91%',
     prazo: {
-      minimo: '12 meses',
+      minimo: '3 meses',
       maximo: '24 meses',
     },
     documentos: [
@@ -156,13 +156,13 @@ export const productsData: Product[] = [
       },
     },
     montante: {
-      minimo: '50.000 kz',
-      maximo: '5.000.000 kz',
+      minimo: '100.000 kz',
+      maximo: '2.500.000 kz',
     },
-    taxaJuros: '2.8%',
+    taxaJuros: '4.91%',
     prazo: {
-      minimo: '6 meses',
-      maximo: '36 meses',
+      minimo: '3 meses',
+      maximo: '24 meses',
     },
     documentos: [
       'Checklist de Crédito',
@@ -230,13 +230,13 @@ export const productsData: Product[] = [
       },
     },
     montante: {
-      minimo: '200.000 kz',
-      maximo: '10.000.000 kz',
+      minimo: '100.000 kz',
+      maximo: '2.500.000 kz',
     },
-    taxaJuros: '3.5%',
+    taxaJuros: '4.91%',
     prazo: {
-      minimo: '12 meses',
-      maximo: '48 meses',
+      minimo: '3 meses',
+      maximo: '12 meses',
     },
     documentos: [
       'Checklist de Crédito',
@@ -306,12 +306,12 @@ export const productsData: Product[] = [
     },
     montante: {
       minimo: '100.000 kz',
-      maximo: '3.000.000 kz',
+      maximo: '2.500.000 kz',
     },
-    taxaJuros: '3.8%',
+    taxaJuros: '4.91%',
     prazo: {
-      minimo: '6 meses',
-      maximo: '24 meses',
+      minimo: '3 meses',
+      maximo: '12 meses',
     },
     documentos: [
       'Checklist de Crédito',
@@ -379,13 +379,13 @@ export const productsData: Product[] = [
       },
     },
     montante: {
-      minimo: '150.000 kz',
-      maximo: '8.000.000 kz',
+      minimo: '100.000 kz',
+      maximo: '2.500.000 kz',
     },
-    taxaJuros: '3.0%',
+    taxaJuros: '5%',
     prazo: {
-      minimo: '12 meses',
-      maximo: '60 meses',
+      minimo: '3 meses',
+      maximo: '12 meses',
     },
     documentos: [
       'Checklist de Crédito',
