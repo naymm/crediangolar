@@ -1,23 +1,33 @@
-import { useState } from 'react';
-import { Calendar, FileText, Download } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { Calendar, ExternalLink, Eye } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import heroBg from '@/assets/hero-bg.jpg';
 import { Button } from '@/components/ui/button';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog';
 
 const ReportsAndAccounts = () => {
-  const [selectedYear, setSelectedYear] = useState('2012');
-  
-  const availableYears = ['2012', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+  const [selectedYear, setSelectedYear] = useState('2024');
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
-  const handleDownload = () => {
-    // Aqui você pode adicionar a lógica de download do arquivo
-    // Por exemplo, redirecionar para um arquivo PDF ou fazer download
-    const fileName = `Relatório e Contas ${selectedYear}.pdf`;
-    // Simulação de download - substitua pela URL real do arquivo
-    console.log(`Downloading ${fileName}`);
-    // window.open(`/reports/${fileName}`, '_blank');
-  };
+  const reportFiles = useMemo(
+    () => ({
+      '2020': '/relatorios/RELATORIO-E-CONTAS-RMARCA-2020.pdf',
+      '2021': '/relatorios/RELATORIO-E-CONTAS-RMARCA-2021.pdf',
+      '2022': '/relatorios/RELATORIO-E-CONTAS-RMARCA-2022.pdf',
+      '2023': '/relatorios/RELATORIO-E-CONTAS-RMARCA-2023.pdf',
+      '2024': '/relatorios/RELATORIO-E-CONTAS-RMARCA-2024.pdf',
+    }),
+    [],
+  );
+
+  const availableYears = Object.keys(reportFiles);
+  const currentPdf = reportFiles[selectedYear as keyof typeof reportFiles];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -78,22 +88,58 @@ const ReportsAndAccounts = () => {
                 </div>
               </div>
 
-              {/* Download Link Section */}
-              <div className="mt-8">
-                <Button
-                  onClick={handleDownload}
-                  className="btn-gold inline-flex items-center gap-2"
-                >
-                  <FileText className="w-5 h-5" />
-                  <span>Relatório e Contas {selectedYear}.pdf</span>
-                  <Download className="w-4 h-4" />
-                </Button>
+              {/* Preview + Open */}
+              <div className="mt-10 space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Relatório e Contas {selectedYear}
+                  </h3>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <Button
+                      onClick={() => setIsPreviewOpen(true)}
+                      className="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2"
+                    >
+                      Pré-visualizar
+                      <Eye className="w-4 h-4" />
+                    </Button>
+                    <a href={currentPdf} target="_blank" rel="noreferrer">
+                      <Button className="btn-gold inline-flex items-center gap-2">
+                        Abrir PDF
+                        <ExternalLink className="w-4 h-4" />
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+
+                <p className="text-xs text-muted-foreground">
+                  Clique em <span className="font-semibold">Pré-visualizar</span> para ver o relatório num modal. Se o seu navegador não suportar o preview, use <span className="font-semibold">Abrir PDF</span>.
+                </p>
               </div>
             </div>
           </div>
         </section>
       </main>
       <Footer />
+
+      <Dialog open={isPreviewOpen} onOpenChange={setIsPreviewOpen}>
+        <DialogContent className="max-w-5xl w-[95vw] h-[85vh] p-0 overflow-hidden">
+          <DialogHeader className="p-6 pb-3">
+            <DialogTitle>
+              Relatório e Contas {selectedYear}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="h-full px-6 pb-6">
+            <div className="h-[calc(85vh-90px)] rounded-xl overflow-hidden border border-border bg-muted">
+              <iframe
+                key={currentPdf}
+                src={currentPdf}
+                title={`Relatório e Contas ${selectedYear}`}
+                className="w-full h-full bg-white"
+              />
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

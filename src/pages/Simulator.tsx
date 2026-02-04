@@ -117,7 +117,7 @@ const Simulator = () => {
                   <button
                     key={product.id}
                     onClick={() => setSelectedProduct(index)}
-                    className={`flex flex-col items-center justify-center gap-3 h-32 min-w-[150px] max-w-[200px] px-4 border-2 rounded-lg transition-all duration-300 transform ${
+                    className={`flex flex-col items-center justify-center gap-3 h-16 min-w-[150px] max-w-[200px] px-4 border-2 rounded-lg transition-all duration-300 transform ${
                       selectedProduct === index
                         ? 'bg-primary border-primary text-primary-foreground shadow-lg scale-105'
                         : 'bg-background border-primary/50 text-primary hover:bg-primary/5 hover:border-primary hover:scale-102'

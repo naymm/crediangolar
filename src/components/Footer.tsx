@@ -11,14 +11,13 @@ const footerLinks = {
   ],
   ofertas: [
     { name: 'Produtos', href: '/produtos' },
-    { name: 'Notícias', href: '#noticias' },
-    { name: 'Projetos', href: '#projetos' },
+    { name: 'Notícias', href: '/noticias' },
     { name: 'FAQ', href: '#' },
   ],
   financeira: [
     { name: 'Notícias', href: '#' },
     { name: 'Boletim COSEC', href: '#' },
-    { name: 'Tarifários', href: '#' },
+    { name: 'Preçários', href: '#' },
   ],
 };
 
@@ -131,7 +130,7 @@ const Footer = () => {
                   href="mailto:geral@crediangolar.ao"
                   className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
                 >
-                  geral@crediangolar.ao
+                  geral@crediangolar.co.ao
                 </a>
               </li>
             </ul>
