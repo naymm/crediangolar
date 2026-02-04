@@ -13,7 +13,7 @@ const institucionalSubmenu = [
 
 const navLinks = [
   { name: 'Produtos', href: '/produtos' },
-  { name: 'Notícias', href: '#noticias' },
+  { name: 'Notícias', href: '/noticias' },
   { name: 'Contacto', href: '/contacto' },
 ];
 

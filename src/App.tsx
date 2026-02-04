@@ -12,6 +12,8 @@ import ReportsAndAccounts from "./pages/ReportsAndAccounts";
 import Contact from "./pages/Contact";
 import Simulator from "./pages/Simulator";
 import Organogram from "./pages/Organogram";
+import NewsPage from "./pages/NewsPage";
+import NewsSinglePage from "./pages/NewsSinglePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/produtos" element={<ProductsPage />} />
           <Route path="/produtos/:slug" element={<ProductPage />} />
+          <Route path="/noticias" element={<NewsPage />} />
+          <Route path="/noticias/:slug" element={<NewsSinglePage />} />
           <Route path="/sobre-nos" element={<AboutUs />} />
           <Route path="/mensagem-pca" element={<ChairmanMessage />} />
           <Route path="/relatorio-contas" element={<ReportsAndAccounts />} />
