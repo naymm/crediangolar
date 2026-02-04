@@ -1,8 +1,17 @@
+import { useState } from 'react';
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 import videoThumbnail from '@/assets/capa-video.png';
+import videoFile from '@/assets/videos/instituconal.mp4';
 
 const VideoSection = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="section-padding bg-primary">
       <div className="container mx-auto px-4">
@@ -29,11 +38,28 @@ const VideoSection = () => {
                 Qual crédito que se adapta a minha situação?
               </h3>
               
-              {/* Play Button */}
-              <Button className="btn-gold flex items-center gap-3 px-8 py-6 text-base">
-                <Play className="w-5 h-5 fill-current" />
-                Ver o Vídeo
-              </Button>
+              {/* Play Button with Dialog */}
+              <Dialog open={isOpen} onOpenChange={setIsOpen}>
+                <DialogTrigger asChild>
+                  <Button className="btn-gold flex items-center gap-3 px-8 py-6 text-base">
+                    <Play className="w-5 h-5 fill-current" />
+                    Ver o Vídeo
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl w-full p-0 bg-black border-none">
+                  <div className="relative aspect-video w-full">
+                    <video
+                      src={videoFile}
+                      controls
+                      autoPlay
+                      className="w-full h-full object-contain"
+                      onEnded={() => setIsOpen(false)}
+                    >
+                      O seu navegador não suporta a reprodução de vídeo.
+                    </video>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>
