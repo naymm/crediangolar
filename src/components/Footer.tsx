@@ -114,12 +114,11 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 mt-0.5 text-accent" />
                 <div className="text-sm text-primary-foreground/70">
-                  <p>+244 947 713 815</p>
-                  <p>+244 947 713 818</p>
+                  <p>+244 932 716 875</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 mt-0.5 text-accent" />
+                <MapPin className="w-8 h-4 mt-0.5 text-accent" />
                 <p className="text-sm text-primary-foreground/70">
                   Rua Rei Katyavala, Bairro Maculusso, Ingombota, Luanda
                 </p>
@@ -156,7 +155,10 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-4">
           <p className="text-center text-sm text-primary-foreground/50">
-            © 2017 - 2025 Crediangolar. • O futuro ao nosso encontro
+            © 2025 Crediangolar - Sociedade de Microcrédito, SA. • Todos os direitos reservados.
+          </p>
+          <p className="text-center text-sm text-primary-foreground/50">
+          Entidade autorizada e regulada pelo Banco Nacional de Angola.
           </p>
         </div>
       </div>

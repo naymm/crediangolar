@@ -31,15 +31,15 @@ const ChairmanMessage = () => {
             <div className="max-w-4xl mx-auto">
               {/* Introduction Paragraphs */}
               <div className="space-y-6 mb-8">
-                <p className="text-muted-foreground text-lg leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                   É com grande satisfação e entusiasmo que me dirijo como PCA da CREDIANGOLAR para partilhar a nossa visão, valores e missão. A nossa instituição está comprometida em capacitar micro-empresários e pequenas e médias empresas através de soluções financeiras inovadoras e sustentáveis, proporcionando acesso justo ao capital e contribuindo para o desenvolvimento económico e social de Angola através da inclusão financeira.
                 </p>
 
-                <p className="text-muted-foreground text-lg leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                   Acreditamos que ao proporcionar capital justo e acessível, estamos a contribuir para o crescimento económico e social, criando oportunidades para que os nossos clientes possam realizar os seus sonhos e expandir os seus negócios.
                 </p>
 
-                <p className="text-muted-foreground text-lg leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                   Valorizamos profundamente os relacionamentos com os nossos clientes e estamos comprometidos em fornecer soluções financeiras personalizadas que atendam às suas necessidades específicas, sempre com transparência, agilidade e excelência no atendimento.
                 </p>
               </div>
@@ -48,22 +48,22 @@ const ChairmanMessage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 {/* Left Column */}
                 <div className="space-y-6">
-                  <p className="text-muted-foreground text-lg leading-relaxed">
+                  <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                     Estamos orgulhosos de ser o seu parceiro financeiro de confiança. A inovação é uma força motriz na nossa organização, e estamos constantemente a procurar formas de melhorar os nossos serviços e produtos para melhor servir os nossos clientes.
                   </p>
 
-                  <p className="text-muted-foreground text-lg leading-relaxed">
+                  <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                     A tecnologia desempenha um papel fundamental na simplificação dos processos financeiros e na melhoria da experiência do cliente. Investimos continuamente em soluções digitais, análise de dados e ferramentas que nos permitem oferecer serviços mais eficientes e personalizados. Além disso, estamos comprometidos com a sustentabilidade e a proteção do meio ambiente, integrando práticas responsáveis em todas as nossas operações.
                   </p>
                 </div>
 
                 {/* Right Column */}
                 <div className="space-y-6">
-                  <p className="text-muted-foreground text-lg leading-relaxed">
+                  <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                     Integramos práticas financeiras responsáveis em todas as nossas operações e apoiamos projectos com impacto social positivo. A nossa equipa está dedicada a fornecer um serviço excepcional, sempre com foco nas necessidades dos nossos clientes e no desenvolvimento sustentável das comunidades que servimos.
                   </p>
 
-                  <p className="text-muted-foreground text-lg leading-relaxed">
+                  <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                     Estamos entusiasmados com o futuro e as oportunidades que se apresentam. Continuaremos a trabalhar incansavelmente para criar valor, inovar e transformar a forma como os micro-empresários e PME acedem a soluções financeiras, sempre com o compromisso de ser o seu parceiro de confiança no caminho para o sucesso.
                   </p>
                 </div>

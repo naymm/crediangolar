@@ -1,6 +1,6 @@
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import videoThumbnail from '@/assets/video-thumbnail.jpg';
+import videoThumbnail from '@/assets/capa-video.png';
 
 const VideoSection = () => {
   return (

@@ -220,3 +220,10 @@
 .titulo-pagina {
   font-size: 2rem !important;
 }
+
+.fundo-overlay {
+  background-image: url('@/assets/overlay-branco.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

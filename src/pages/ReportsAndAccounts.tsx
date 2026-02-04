@@ -57,7 +57,7 @@ const ReportsAndAccounts = () => {
             <div className="max-w-4xl mx-auto">
               {/* Introductory Text */}
               <div className="mb-12">
-                <p className="text-muted-foreground text-lg leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                   Estes documentos reflectem as nossas principais realizações, lições aprendidas e metas futuras, destacando a resiliência da equipe e o impacto positivo de nossas iniciativas. Nosso compromisso com a transparência, excelência, inovação e sustentabilidade guia nossas estratégias. Agradecemos a todos que nos apoiaram e esperamos que este relatório inspire confiança e parceria.
                 </p>
               </div>

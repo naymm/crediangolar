@@ -1,4 +1,5 @@
 import { Users, Coins, TrendingUp } from 'lucide-react';
+import overlayfundo from '@/assets/overlay-branco.png';
 
 const stats = [
   {
@@ -24,7 +25,7 @@ const stats = [
 
 const Indicators = () => {
   return (
-    <section className="section-padding bg-muted">
+    <section className="section-padding bg-muted fundo-overlay">
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-foreground mb-12 max-w-3xl mx-auto">

@@ -148,7 +148,7 @@ const AboutUs = () => {
                   <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
                     Missão
                   </h2>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
+                  <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                     Capacitar micro-empresários e PME através de soluções financeiras inovadoras e sustentáveis, proporcionando acesso justo ao capital e contribuindo para o desenvolvimento económico e social de Angola através da inclusão financeira.
                   </p>
                 </CardContent>
@@ -160,7 +160,7 @@ const AboutUs = () => {
                   <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
                     Visão
                   </h2>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
+                  <p className="text-muted-foreground text-lg leading-relaxed texto-justificado">
                     Ser reconhecida como líder de mercado e principal Instituição Financeira Não Bancária para micro-empresários e PME, oferecendo uma experiência excepcional ao cliente e sendo o parceiro financeiro preferido.
                   </p>
                 </CardContent>

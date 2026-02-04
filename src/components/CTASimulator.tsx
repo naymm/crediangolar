@@ -10,7 +10,7 @@ const CTASimulator = () => {
             {/* Left Content */}
             <div className="p-8 md:p-12 lg:p-16">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-                Simule o seu crédito e descubra a melhor opção para si
+                Descubra a melhor opção de crédito para si
               </h2>
               <p className="text-primary-foreground/80 text-lg mb-8">
                 Preencha os dados e descubra qual o crédito adequado para si e receba uma proposta personalizada
@@ -18,8 +18,9 @@ const CTASimulator = () => {
               <Button
                 variant="outline"
                 className="btn-outline-white text-base px-8 py-6"
-              >
+              > <a href="/simulador">
                 Simular
+                </a>
               </Button>
             </div>
 

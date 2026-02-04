@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Indicators from '@/components/Indicators';
 import Products from '@/components/Products';
+import ComoFunciona from '@/components/ComoFunciona';
 import VideoSection from '@/components/VideoSection';
 import FAQ from '@/components/FAQ';
 import CTASimulator from '@/components/CTASimulator';
@@ -16,6 +17,7 @@ const Index = () => {
         <Hero />
         <Indicators />
         <Products />
+        <ComoFunciona />
         <VideoSection />
         <FAQ />
         <CTASimulator />

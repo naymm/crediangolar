@@ -117,7 +117,7 @@ const ProductPage = () => {
         </section>
 
         {/* Key Metrics Section */}
-        <section className="section-padding bg-background">
+        <section className="section-padding bg-background fundo-overlay ">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {/* Montante */}
