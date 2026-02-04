@@ -10,11 +10,9 @@ const institucionalSubmenu = [
 ];
 
 const navLinks = [
-  { name: 'Créditos', href: '#creditos' },
-  { name: 'Produtos', href: '#produtos' },
-  { name: 'Recomendações Cofre', href: '#recomendacoes' },
+  { name: 'Produtos', href: '/produtos' },
   { name: 'Notícias', href: '#noticias' },
-  { name: 'Projetos', href: '#projetos' },
+  { name: 'Contacto', href: '/contacto' },
 ];
 
 const Header = () => {
@@ -34,7 +32,14 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
+          <a
+                href="/"
+                className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
+                Início
+              </a>
             {/* Institucional Dropdown with Hover */}
+            
             <div className="relative group">
               <button className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors flex items-center gap-1 outline-none">
                 Institucional
