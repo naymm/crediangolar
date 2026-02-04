@@ -8,11 +8,11 @@
 @layer base {
   :root {
     /* Primary Colors */
-    --primary: 173 70% 18%; /* #0D4D4D - Verde escuro */
+    --primary: 187 100% 16%; /* #004750 - Verde escuro */
     --primary-foreground: 0 0% 100%;
     
     /* Secondary - Teal */
-    --secondary: 173 56% 24%; /* #1a5f5f - Verde petróleo */
+    --secondary: 187 100% 20%; /* #004750 variante - Verde petróleo */
     --secondary-foreground: 0 0% 100%;
     
     /* Accent - Gold */
@@ -38,7 +38,7 @@
     /* Border */
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 173 70% 18%;
+    --ring: 187 100% 16%;
     
     /* Destructive */
     --destructive: 0 84% 60%;
@@ -48,18 +48,18 @@
     --radius: 0.5rem;
     
     /* Custom Crediangolar tokens */
-    --credi-green: 173 70% 18%;
-    --credi-teal: 173 56% 24%;
+    --credi-green: 187 100% 16%;
+    --credi-teal: 187 100% 20%;
     --credi-gold: 42 56% 55%;
     --credi-light-bg: 0 0% 98%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(173 70% 18% / 0.9), hsl(173 56% 24% / 0.8));
-    --gradient-cta: linear-gradient(135deg, hsl(173 56% 24%), hsl(173 70% 22%));
+    --gradient-hero: linear-gradient(135deg, hsl(187 100% 16% / 0.9), hsl(187 100% 20% / 0.8));
+    --gradient-cta: linear-gradient(135deg, hsl(187 100% 20%), hsl(187 100% 18%));
     
     /* Shadows */
-    --shadow-card: 0 4px 20px -4px hsl(173 70% 18% / 0.1);
-    --shadow-elevated: 0 20px 40px -12px hsl(173 70% 18% / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(187 100% 16% / 0.1);
+    --shadow-elevated: 0 20px 40px -12px hsl(187 100% 16% / 0.15);
     --shadow-gold: 0 4px 20px -4px hsl(42 56% 55% / 0.4);
     
     /* Sidebar defaults */
@@ -74,9 +74,9 @@
   }
 
   .dark {
-    --primary: 173 70% 18%;
+    --primary: 187 100% 16%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 173 56% 24%;
+    --secondary: 187 100% 20%;
     --secondary-foreground: 0 0% 100%;
     --accent: 42 56% 55%;
     --accent-foreground: 0 0% 100%;
@@ -90,7 +90,7 @@
     --popover-foreground: 0 0% 95%;
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 42 56% 55%;
+    --ring: 187 100% 16%;
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 100%;
     --sidebar-background: 240 5.9% 10%;
@@ -189,3 +189,19 @@
 .product-name {
   padding-top: 300px !important;
 }
+
+.organograma {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.texto-justificado {
+  text-align: justify !important;
+}
+
+.btn-gold {
+  background-color: #A9802D !important;
+}
+

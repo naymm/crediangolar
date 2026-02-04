@@ -11,6 +11,7 @@ import ChairmanMessage from "./pages/ChairmanMessage";
 import ReportsAndAccounts from "./pages/ReportsAndAccounts";
 import Contact from "./pages/Contact";
 import Simulator from "./pages/Simulator";
+import Organogram from "./pages/Organogram";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/relatorio-contas" element={<ReportsAndAccounts />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="/simulador" element={<Simulator />} />
+          <Route path="/organograma" element={<Organogram />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

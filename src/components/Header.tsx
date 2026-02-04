@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo-oficial.png';
 
 const institucionalSubmenu = [
   { name: 'Sobre Nós', href: '/sobre-nos' },
   { name: 'Mensagem do PCA', href: '/mensagem-pca' },
+  { name: 'Organograma', href: '/organograma' },
   { name: 'Preçário', href: '#precario' },
   { name: 'Relatório e Contas', href: '/relatorio-contas' },
 ];
@@ -26,7 +28,7 @@ const Header = () => {
           {/* Logo */}
           <a href="/" className="flex items-center">
             <span className="text-xl md:text-2xl font-bold text-primary-foreground tracking-tight">
-              Crediangolar
+              <img src={logo} alt="Logo Crediangolar" className="w-auto h-16 logo-oficial" />
             </span>
           </a>
 

@@ -109,8 +109,8 @@ export default {
         "count-up": "count-up 0.8s ease-out forwards",
       },
       boxShadow: {
-        "card": "0 4px 20px -4px hsl(173 70% 18% / 0.1)",
-        "elevated": "0 20px 40px -12px hsl(173 70% 18% / 0.15)",
+        "card": "0 4px 20px -4px hsl(187 100% 16% / 0.1)",
+        "elevated": "0 20px 40px -12px hsl(187 100% 16% / 0.15)",
         "gold": "0 4px 20px -4px hsl(42 56% 55% / 0.4)",
       },
     },

@@ -72,10 +72,10 @@ const AboutUs = () => {
           />
           <div className="absolute inset-0 bg-primary/90" />
           <div className="relative h-full container mx-auto px-4 flex flex-col justify-center">
-            <p className="text-white/80 text-sm md:text-base mb-2 uppercase tracking-wider">
+            <p className="text-white/80 text-sm md:text-base mb-2 uppercase tracking-wider text-center">
               INSTITUCIONAL
             </p>
-            <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold">
+            <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold text-center">
               SOBRE NÓS
             </h1>
           </div>
@@ -91,7 +91,7 @@ const AboutUs = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                   RMARCA - SOCIEDADE DE MICROCRÉDITO, LDA.
                 </h2>
-                <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
+                <div className="space-y-4 text-muted-foreground text-lg leading-relaxed texto-justificado">
                   <p>
                     A nossa instituição está comprometida em fornecer soluções financeiras inovadoras e acessíveis para micro-empresários e pequenas e médias empresas, contribuindo para o desenvolvimento económico e social de Angola.
                   </p>
