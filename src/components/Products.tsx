@@ -1,37 +1,13 @@
-import productRural from '@/assets/rural.jpg';
-import productConsignado from '@/assets/consignado.png';
-import productEmpreendedor from '@/assets/empreendedor.png';
-import productExpress from '@/assets/empreendedor-express.png';
-import productProtocolo from '@/assets/protocolo.png';
+import { Link } from 'react-router-dom';
+import { productsData } from '@/data/products';
 
-const products = [
-  {
-    name: 'ANGOLAR',
-    subtitle: 'PRODUÇÃO RURAL',
-    image: productRural,
-  },
-  {
-    name: 'ANGOLAR',
-    subtitle: 'CONSIGNADO',
-    image: productConsignado,
-  },
-  {
-    name: 'ANGOLAR',
-    subtitle: 'EMPREENDEDOR',
-    image: productEmpreendedor,
-  },
-  {
-    name: 'ANGOLAR',
-    subtitle: 'EMPREENDEDOR',
-    subtitle2: 'EXPRESS',
-    image: productExpress,
-  },
-  {
-    name: 'ANGOLAR',
-    subtitle: 'PROTOCOLO',
-    image: productProtocolo,
-  },
-];
+const products = productsData.map((product) => ({
+  name: product.name,
+  subtitle: product.subtitle,
+  subtitle2: product.subtitle2,
+  image: product.image,
+  slug: product.slug,
+}));
 
 const Products = () => {
   return (
@@ -51,9 +27,10 @@ const Products = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* First row - 3 items */}
           {products.slice(0, 3).map((product, index) => (
-            <div
+            <Link
               key={index}
-              className="product-card group cursor-pointer aspect-[4/3] rounded-2xl overflow-hidden"
+              to={`/produtos/${product.slug}`}
+              className="product-card group cursor-pointer aspect-[4/3] rounded-2xl overflow-hidden block"
             >
               <img
                 src={product.image}
@@ -71,16 +48,17 @@ const Products = () => {
                   </h4>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         {/* Second row - 2 items centered */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
           {products.slice(3).map((product, index) => (
-            <div
+            <Link
               key={index}
-              className="product-card group cursor-pointer aspect-[4/3] rounded-2xl overflow-hidden"
+              to={`/produtos/${product.slug}`}
+              className="product-card group cursor-pointer aspect-[4/3] rounded-2xl overflow-hidden block"
             >
               <img
                 src={product.image}
@@ -103,7 +81,7 @@ const Products = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
