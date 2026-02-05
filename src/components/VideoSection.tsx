@@ -17,7 +17,7 @@ const VideoSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-primary-foreground mb-12">
-          Transforme a sua ideia em <span className="text-accent">ação</span>
+          Transforme a sua ideia em <span className="text-accent">acção</span>
         </h2>
 
         {/* Video Container */}
@@ -35,7 +35,7 @@ const VideoSection = () => {
             {/* Video Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary-foreground mb-6 max-w-lg">
-                Qual crédito que se adapta a minha situação?
+              Impulsionando Sonhos em Angola.
               </h3>
               
               {/* Play Button with Dialog */}

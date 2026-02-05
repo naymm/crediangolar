@@ -1,11 +1,11 @@
-import { Users, Coins, TrendingUp } from 'lucide-react';
+import { Users, Coins, TrendingDown } from 'lucide-react';
 import overlayfundo from '@/assets/overlay-branco.png';
 
 const stats = [
   {
     icon: Users,
     number: '+2.523',
-    label: 'Clientes Concedidos',
+    label: 'Créditos Concedidos',
     highlight: false,
   },
   {
@@ -16,8 +16,8 @@ const stats = [
     highlight: true,
   },
   {
-    icon: TrendingUp,
-    number: '1.8%',
+    icon: TrendingDown,
+    number: '-1.8%',
     label: 'Taxa de Incumprimento',
     highlight: false,
   },
