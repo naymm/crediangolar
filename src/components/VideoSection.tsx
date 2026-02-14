@@ -7,7 +7,6 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 import videoThumbnail from '@/assets/capa-video.png';
-import videoFile from '@/assets/videos/instituconal.mp4';
 
 const VideoSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +48,7 @@ const VideoSection = () => {
                 <DialogContent className="max-w-5xl w-full p-0 bg-black border-none">
                   <div className="relative aspect-video w-full">
                     <video
-                      src={videoFile}
+                      src="/videos/instituconal.mp4"
                       controls
                       autoPlay
                       className="w-full h-full object-contain"
